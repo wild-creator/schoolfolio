@@ -1,24 +1,43 @@
 {
-  "name": "frontend",
+  "name": "schoolfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-brands-svg-icons": "^6.4.0",
+    "@fortawesome/free-regular-svg-icons": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.7.2",
-    "bootstrap": "^5.3.3",
+    "cors": "^2.8.5",
+    "dompurify": "^3.1.5",
+    "express": "^4.19.2",
+    "firebase": "^10.12.2",
+    "firebase-admin": "^12.1.1",
+    "html-react-parser": "^5.1.10",
+    "mongodb": "^6.7.0",
+    "multer": "^1.4.5-lts.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-ga": "^3.3.1",
+    "react-ga4": "^2.1.0",
+    "react-helmet": "^6.1.0",
     "react-router-dom": "^6.23.1",
-    "react-scripts": "^3.0.1",
-    "web-vitals": "^2.1.4"
+    "react-scripts": "5.0.1",
+    "styled-components": "^5.3.10",
+    "vercel": "^34.2.5",
+    "web-vitals": "^2.1.4",
+    "bootstrap": "^5.3.3"
   },
   "scripts": {
-    "start": "react-scripts --openssl-legacy-provider start",
-    "build": "react-scripts --openssl-legacy-provider build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "serve": "node src/server.js"
   },
   "eslintConfig": {
     "extends": [
