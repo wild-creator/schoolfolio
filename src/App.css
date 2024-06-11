@@ -1,0 +1,15 @@
+.form-group {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.list-group-item {
+  margin-bottom: 10px;
+  border: 1px solid #dee2e6;
+}
+
+.img-thumbnail {
+  max-width: 100px;
+  height: auto;
+}
