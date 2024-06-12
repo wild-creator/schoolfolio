@@ -19,15 +19,13 @@ admin.initializeApp({
 const bucket = admin.storage().bucket();
 
 const uri =
-  "mongodb+srv://mufisiruakinsanya00:nCGY1Oc3MpjQEbgO@testdatabase.legb9e2.mongodb.net/?retryWrites=true&w=majority&appName=Testdatabase&tls=true&tlsAllowInvalidCertificates=true";
+  "mongodb+srv://faveejiofor2009:ybffqUz8267uEFY6@portfolio.0ixnpy5.mongodb.net/?retryWrites=true&w=majority&appName=Portfolio";
 const client = new MongoClient(uri, {
   serverApi: {
     version: ServerApiVersion.v1,
     strict: true,
     deprecationErrors: true,
   },
-  tls: true,
-  tlsAllowInvalidCertificates: true,
 });
 
 app.use(cors());
