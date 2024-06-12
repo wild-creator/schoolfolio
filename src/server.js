@@ -19,7 +19,7 @@ admin.initializeApp({
 const bucket = admin.storage().bucket();
 
 const uri =
-  "mongodb+srv://mufisiruakinsanya00:6xgl13lKDzZblYKL@testdatabase.legb9e2.mongodb.net/?retryWrites=true&w=majority&appName=Testdatabase&tls=true&tlsAllowInvalidCertificates=true";
+  "mongodb+srv://mufisiruakinsanya00:nCGY1Oc3MpjQEbgO@testdatabase.legb9e2.mongodb.net/?retryWrites=true&w=majority&appName=Testdatabase&tls=true&tlsAllowInvalidCertificates=true";
 const client = new MongoClient(uri, {
   serverApi: {
     version: ServerApiVersion.v1,
