@@ -8,6 +8,7 @@ const App = () => {
   const [contacts, setContacts] = useState([]);
   const [showForm, setShowForm] = useState(false);
   const [editContact, setEditContact] = useState(null);
+  const [disabled, setDisabled] = useState(false);
   const departments = [
     {
       label: "College of Engineering- Biomedical Engineering",
@@ -163,6 +164,7 @@ const App = () => {
   };
 
   const handleFormSubmit = async (newContact) => {
+    setDisabled(true);
     if (editContact) {
       await handleEdit(editContact._id, { ...editContact, ...newContact });
     } else {
@@ -180,11 +182,14 @@ const App = () => {
         setShowForm(false);
       } catch (error) {
         console.error("Error submitting form:", error);
+      } finally {
+        setDisabled(false);
       }
     }
   };
 
   const handleEdit = async (id, updatedData) => {
+    setDisabled(true);
     try {
       const response = await axios.put(
         `${window.location.origin}/api/user/${id}`,
@@ -204,6 +209,8 @@ const App = () => {
       setShowForm(false);
     } catch (error) {
       console.error("Error editing contact:", error);
+    } finally {
+      setDisabled(false);
     }
   };
 
@@ -249,6 +256,7 @@ const App = () => {
             onSubmit={handleFormSubmit}
             departments={departments}
             contact={editContact}
+            disabled={disabled}
           />
         )}
       </header>

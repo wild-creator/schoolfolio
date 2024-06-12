@@ -3,7 +3,7 @@ import "./ContactForm.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClose } from "@fortawesome/free-solid-svg-icons";
 
-const ContactForm = ({ onClose, onSubmit, departments, contact }) => {
+const ContactForm = ({ onClose, onSubmit, departments, contact, disabled }) => {
   const [formState, setFormState] = useState({
     fullName: "",
     email: "",
@@ -101,7 +101,7 @@ const ContactForm = ({ onClose, onSubmit, departments, contact }) => {
           <label>Upload picture:</label>
           {err && <div>Error: {err}</div>}
           <input type="file" name="picture" onChange={handleChange} />
-          <button type="submit">Submit</button>
+          <button type="submit" disabled={disabled}>Submit</button>
         </form>
       </div>
     </div>
