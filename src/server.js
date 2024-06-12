@@ -249,5 +249,3 @@ initializeDatabase().then(() => {
     console.log(`Server running at ${port}`);
   });
 });
-
-module.exports = app;
