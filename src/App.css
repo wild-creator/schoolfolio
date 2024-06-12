@@ -1,15 +1,49 @@
-.form-group {
-  background-color: #f8f9fa;
-  padding: 20px;
-  border-radius: 10px;
+.FormApp {
+    text-align: center;
+}
+.FormApp * { font-family: "Poppins", sans-serif; }
+h1 { font-weight: 400; }
+.FormApp-header {
+    background-color: #DDD;
+    padding: 20px;
+    color: #666;
 }
 
-.list-group-item {
-  margin-bottom: 10px;
-  border: 1px solid #dee2e6;
+.create-button {
+    background-color: #2fc7f1;
+    color: #FFF;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
 }
 
-.img-thumbnail {
-  max-width: 100px;
-  height: auto;
+.create-button:hover {
+    background-color: #21a1f1;
+}
+
+.loadCircle {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 10px solid #EEE;
+    margin: 5px auto;
+    border-top: 10px solid rgb(159, 159, 241);
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    .create-button {
+        width: 90%;
+        font-size: 14px;
+    }
 }

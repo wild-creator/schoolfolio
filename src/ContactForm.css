@@ -1,0 +1,87 @@
+/* Overlay to cover the whole page */
+.contact-form-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+/* Container for the contact form */
+.contact-form-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Close button */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Form elements */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea, select {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .contact-form-container {
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    input, textarea, select {
+        font-size: 14px;
+    }
+
+    button[type="submit"] {
+        font-size: 14px;
+    }
+
+    .close-button {
+        font-size: 14px;
+    }
+}
