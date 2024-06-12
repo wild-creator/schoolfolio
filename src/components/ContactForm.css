@@ -68,6 +68,10 @@ button[type="submit"]:hover {
     background-color: #218838;
 }
 
+button[type="submit"]:disabled {
+    background-color: #28a746a4;
+}
+
 /* Responsive design */
 @media (max-width: 600px) {
     .contact-form-container {
