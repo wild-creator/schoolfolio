@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./ContactCard.css";
+import "./contact.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEdit } from "@fortawesome/free-solid-svg-icons";
 import DOMPurify from "dompurify";
