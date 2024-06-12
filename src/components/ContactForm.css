@@ -61,7 +61,9 @@ button[type="submit"] {
     font-size: 16px;
     cursor: pointer;
 }
-
+button[type="submit"]:disabled {
+    background-color: #28a746a4;
+}
 button[type="submit"]:hover {
     background-color: #218838;
 }
