@@ -17,6 +17,7 @@
     background: #fff;
     padding: 20px;
     border-radius: 8px;
+    border: 3px dotted #CCC;
     width: 100%;
     max-width: 500px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -54,7 +55,7 @@ textarea {
 
 button[type="submit"] {
     padding: 10px;
-    background-color: #28a745;
+    background-color: #7070df;
     color: white;
     border: none;
     border-radius: 4px;
@@ -62,16 +63,11 @@ button[type="submit"] {
     cursor: pointer;
 }
 button[type="submit"]:disabled {
-    background-color: #28a746a4;
+    background-color: #7070df9d;
 }
 button[type="submit"]:hover {
-    background-color: #218838;
+    background-color: #6262cf;
 }
-
-button[type="submit"]:disabled {
-    background-color: #28a746a4;
-}
-
 /* Responsive design */
 @media (max-width: 600px) {
     .contact-form-container {
