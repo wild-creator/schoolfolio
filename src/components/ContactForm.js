@@ -83,7 +83,7 @@ const ContactForm = ({ onClose, onSubmit, departments, contact, disabled }) => {
             onChange={handleChange}
             required
           >
-            <option value="">Select a department</option>
+            <option value="">Select your department</option>
             {departments.map((dept) => (
               <option key={dept.value} value={dept.value}>
                 {dept.label}
@@ -98,10 +98,10 @@ const ContactForm = ({ onClose, onSubmit, departments, contact, disabled }) => {
             placeholder="Matric Number"
             required
           />
-          <label>Upload picture:</label>
+          <label>Upload A Picture:</label>
           {err && <div>Error: {err}</div>}
           <input type="file" name="picture" onChange={handleChange} />
-          <button type="submit" disabled={disabled}>Submit</button>
+          <button type="submit" disabled={disabled}>Add A New Card</button>
         </form>
       </div>
     </div>
